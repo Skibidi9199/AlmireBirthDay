@@ -44,7 +44,7 @@
       color: white;
     }
 
-    /* Куроми */
+  
     .kuramiki {
       position: absolute;
       left: -200px;
@@ -59,7 +59,7 @@
       100% { left: 100%; }
     }
 
-    /* Конфетти */
+    
     .confetti {
       position: fixed;
       bottom: 0;
@@ -78,7 +78,7 @@
       100% { transform: translateY(-300vh) rotate(720deg); opacity: 0; }
     }
 
-    /* Букет */
+    
     .bouquet {
       position: absolute;
       bottom: -300px;
@@ -91,27 +91,25 @@
 
     @keyframes bouquetUp {
       0% { bottom: -500px; }
-      100% { bottom: -270px; }
+      100% { bottom:-300px; }
     }
   </style>
 </head>
 <body>
 
-  <img src="kuromy.png" width="150" class="photo" alt="Фото">
+  <img src="https://files.catbox.moe/3d5g22.png" width="150" class="photo" alt="Фото">
   
   <h2>Поздравляю с днём рождения!</h2>
   <h3>Желаю тебе море радости, верных друзей и исполнения самых заветных желаний.</h3>
+  <img src="https://files.catbox.moe/3d5g22.png" class="kuramiki" style="top: 90px; animation-delay: 0s;">
+  <img src="https://files.catbox.moe/3d5g22.png" class="kuramiki" style="top: 280px; animation-delay: 2s;">
+  <img src="https://files.catbox.moe/3d5g22.png" class="kuramiki" style="top: 450px; animation-delay: 4s;">
 
-  <!-- Куроми -->
-  <img src="kuromy.png" class="kuramiki" style="top: 90px; animation-delay: 0s;">
-  <img src="kuromy.png" class="kuramiki" style="top: 280px; animation-delay: 2s;">
-  <img src="kuromy.png" class="kuramiki" style="top: 450px; animation-delay: 4s;">
-
-  <!-- Кнопка и музыка -->
+  
   <button class="button" onclick="playAudio('tugan')">Музыка</button>
   <audio id="tugan" src="https://files.catbox.moe/niazl0.mp3" preload="auto"></audio>
 
-  <!-- Букет -->
+  
   <img src="https://files.catbox.moe/45ogd8.png" class="bouquet" id="bouquet" alt="Цветы">
 
   <script>
